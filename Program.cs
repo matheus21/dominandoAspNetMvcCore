@@ -21,14 +21,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "modulos",
-    pattern: "Gestao/{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "categoria",
-    pattern: "{controller=Home}/{action=Index}/{id}/{categoria?}");
-
-app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
